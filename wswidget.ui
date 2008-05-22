@@ -1,0 +1,524 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>WSWidget</class>
+<author>Pontus Freyhult</author>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>WSWidget</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>800</width>
+            <height>500</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>5</hsizetype>
+            <vsizetype>5</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>800</width>
+            <height>500</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>760</width>
+            <height>610</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>WSWidget</string>
+    </property>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>addAccount</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>480</x>
+                <y>60</y>
+                <width>228</width>
+                <height>32</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Add account</string>
+        </property>
+    </widget>
+    <widget class="QComboBox">
+        <property name="name">
+            <cstring>accountSelector</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>190</x>
+                <y>60</y>
+                <width>280</width>
+                <height>32</height>
+            </rect>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>100</width>
+                <height>0</height>
+            </size>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel1_2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>60</y>
+                <width>130</width>
+                <height>32</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Use account:</string>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>12</x>
+                <y>20</y>
+                <width>345</width>
+                <height>32</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Web service to export to:</string>
+        </property>
+    </widget>
+    <widget class="QComboBox">
+        <item>
+            <property name="text">
+                <string>Smugmug</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>Picasa</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>23</string>
+            </property>
+        </item>
+        <property name="name">
+            <cstring>serviceSelector</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>363</x>
+                <y>20</y>
+                <width>345</width>
+                <height>32</height>
+            </rect>
+        </property>
+        <property name="toolTip" stdset="0">
+            <string>Select the service to upload images to.</string>
+        </property>
+    </widget>
+    <widget class="QButtonGroup">
+        <property name="name">
+            <cstring>buttonGroup3</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>120</y>
+                <width>470</width>
+                <height>140</height>
+            </rect>
+        </property>
+        <property name="lineWidth">
+            <number>0</number>
+        </property>
+        <property name="title">
+            <string>Upload images</string>
+        </property>
+        <widget class="QButtonGroup">
+            <property name="name">
+                <cstring>buttonGroup4</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>320</x>
+                    <y>0</y>
+                    <width>150</width>
+                    <height>90</height>
+                </rect>
+            </property>
+            <property name="lineWidth">
+                <number>0</number>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <widget class="QRadioButton">
+                <property name="name">
+                    <cstring>existingAlbum</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>10</y>
+                        <width>140</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Existing album</string>
+                </property>
+                <property name="checked">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QRadioButton">
+                <property name="name">
+                    <cstring>newAlbum</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>30</y>
+                        <width>120</width>
+                        <height>31</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>New album</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QRadioButton">
+            <property name="name">
+                <cstring>addToAlbum</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>30</y>
+                    <width>270</width>
+                    <height>24</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Add selected images to</string>
+            </property>
+        </widget>
+        <widget class="QRadioButton">
+            <property name="name">
+                <cstring>uploadAlbums</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>70</y>
+                    <width>460</width>
+                    <height>24</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Upload selected album "1234567890123456789"</string>
+            </property>
+            <property name="checked">
+                <bool>false</bool>
+            </property>
+        </widget>
+        <widget class="QRadioButton">
+            <property name="name">
+                <cstring>uploadAllAlbums</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>110</y>
+                    <width>441</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Upload all albums that do not exist already</string>
+            </property>
+        </widget>
+    </widget>
+    <widget class="QComboBox">
+        <property name="name">
+            <cstring>album</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>490</x>
+                <y>120</y>
+                <width>280</width>
+                <height>30</height>
+            </rect>
+        </property>
+    </widget>
+    <widget class="QLineEdit">
+        <property name="name">
+            <cstring>addPhotosToNewAlbumName</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>490</x>
+                <y>150</y>
+                <width>290</width>
+                <height>23</height>
+            </rect>
+        </property>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>groupBox2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>270</y>
+                <width>530</width>
+                <height>100</height>
+            </rect>
+        </property>
+        <property name="lineWidth">
+            <number>0</number>
+        </property>
+        <property name="title">
+            <string>New album settings</string>
+        </property>
+        <widget class="QComboBox">
+            <property name="name">
+                <cstring>configuration</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>190</x>
+                    <y>10</y>
+                    <width>320</width>
+                    <height>31</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel6</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>70</y>
+                    <width>180</width>
+                    <height>31</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Sub category</string>
+            </property>
+        </widget>
+        <widget class="QComboBox">
+            <property name="name">
+                <cstring>category</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>210</x>
+                    <y>40</y>
+                    <width>210</width>
+                    <height>31</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QComboBox">
+            <property name="name">
+                <cstring>subcategory</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>210</x>
+                    <y>70</y>
+                    <width>210</width>
+                    <height>31</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel4</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>168</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Album configuration</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel5</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>50</y>
+                    <width>90</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Category</string>
+            </property>
+        </widget>
+    </widget>
+    <widget class="KLed">
+        <property name="name">
+            <cstring>statusLed</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>620</x>
+                <y>380</y>
+                <width>30</width>
+                <height>40</height>
+            </rect>
+        </property>
+        <property name="toolTip" stdset="0">
+            <string>Working.</string>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>statusText</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>491</x>
+                <y>430</y>
+                <width>290</width>
+                <height>50</height>
+            </rect>
+        </property>
+        <property name="font">
+            <font>
+                <pointsize>8</pointsize>
+            </font>
+        </property>
+        <property name="text">
+            <string>Statusbox</string>
+        </property>
+        <property name="alignment">
+            <set>WordBreak|AlignTop|AlignHCenter</set>
+        </property>
+    </widget>
+    <widget class="QCheckBox">
+        <property name="name">
+            <cstring>matchCategories</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>460</x>
+                <y>230</y>
+                <width>281</width>
+                <height>21</height>
+            </rect>
+        </property>
+        <property name="font">
+            <font>
+                <pointsize>9</pointsize>
+            </font>
+        </property>
+        <property name="text">
+            <string>Try to match categories</string>
+        </property>
+        <property name="toolTip" stdset="0">
+            <string>If selected and an existing category matches the local category for an album, use that category instead of the chosen one.</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>uploadButton</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>80</x>
+                <y>450</y>
+                <width>220</width>
+                <height>32</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Start Upload</string>
+        </property>
+    </widget>
+    <widget class="QCheckBox">
+        <property name="name">
+            <cstring>privateMode</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>380</y>
+                <width>520</width>
+                <height>21</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Private mode</string>
+        </property>
+        <property name="toolTip" stdset="0">
+            <string>Only names (of images and albums) are transferred, tags, ratings and comments are not.</string>
+        </property>
+    </widget>
+    <widget class="QCheckBox">
+        <property name="name">
+            <cstring>skipExisting</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>410</y>
+                <width>520</width>
+                <height>21</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Skip existing images</string>
+        </property>
+        <property name="toolTip" stdset="0">
+            <string>If checked, WSExport will try to verify whatever the image already exists on the server and skip the upload if possible.</string>
+        </property>
+    </widget>
+</widget>
+<includes>
+    <include location="local" impldecl="in implementation">wswidget.ui.h</include>
+</includes>
+<slots>
+    <slot>slotExport()</slot>
+    <slot>slotUploadSelectedAlbums()</slot>
+    <slot>slotAddImagesToAlbum()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>kled.h</includehint>
+</includehints>
+</UI>

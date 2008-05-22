@@ -1,0 +1,53 @@
+Log for qt3to4 on fr okt 5 13:07:44 2007. Number of log entries: 1
+No changes made to file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/plugin_wsexport.cpp
+
+Log for qt3to4 on fr okt 5 13:08:20 2007. Number of log entries: 44
+No changes made to file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/plugin_wsexport.cpp
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wsbase.cpp at line 348 column 19: QMessageBox -> Qt
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wsbase.cpp at line 364 column 23: IO_WriteOnly -> QIODevice::WriteOnly
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wsbase.cpp at line 661 column 35: QValueList -> Q3ValueList
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wsbase.cpp: Added the following include directives:
+	#include <Q3ValueList> 
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wspicasa.cpp at line 287 column 23: IO_WriteOnly -> QIODevice::WriteOnly
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wspicasa.cpp at line 294 column 27: IO_ReadOnly -> QIODevice::ReadOnly
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wspicasa.cpp at line 363 column 26: IO_ReadOnly -> QIODevice::ReadOnly
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wssmugmug.cpp at line 451 column 26: IO_ReadOnly -> QIODevice::ReadOnly
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswidget.cpp at line 16 column 22: qbuttongroup.h -> q3buttongroup.h
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswidget.cpp at line 19 column 19: qgroupbox.h -> q3groupbox.h
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswidget.cpp at line 24 column 20: qwhatsthis.h -> q3whatsthis.h
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswidget.cpp at line 28 column 61: WFlags -> Qt::WFlags
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswidget.cpp at line 53 column 35: QButtonGroup -> Q3ButtonGroup
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswidget.cpp at line 57 column 35: QButtonGroup -> Q3ButtonGroup
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswidget.cpp at line 84 column 29: QGroupBox -> Q3GroupBox
+No changes made to file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswidget.moc.cpp
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswindow.cpp at line 330 column 11: QValueList -> Q3ValueList
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswindow.cpp at line 401 column 16: QValueList -> Q3ValueList
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswindow.cpp: Added the following include directives:
+	#include <Q3ValueList> 
+No changes made to file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/plugin_wsexport.h
+No changes made to file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wsapi.h
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wsbase.h at line 29 column 19: qptrqueue.h -> q3ptrqueue.h
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wsbase.h at line 103 column 41: QValueList -> Q3ValueList
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wsbase.h at line 148 column 15: QPtrQueue -> Q3PtrQueue
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wsbase.h at line 149 column 15: QPtrQueue -> Q3PtrQueue
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wsbase.h: Added the following include directives:
+	#include <Q3ValueList> 
+No changes made to file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wspicasa.h
+No changes made to file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wssmugmug.h
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswidget.h at line 21 column 17: QVBoxLayout -> Q3VBoxLayout
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswidget.h at line 22 column 17: QHBoxLayout -> Q3HBoxLayout
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswidget.h at line 23 column 17: QGridLayout -> Q3GridLayout
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswidget.h at line 28 column 18: QButtonGroup -> Q3ButtonGroup
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswidget.h at line 31 column 15: QGroupBox -> Q3GroupBox
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswidget.h at line 40 column 63: WFlags -> Qt::WFlags
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswidget.h at line 48 column 16: QButtonGroup -> Q3ButtonGroup
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswidget.h at line 49 column 16: QButtonGroup -> Q3ButtonGroup
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswidget.h at line 57 column 13: QGroupBox -> Q3GroupBox
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswidget.h: Added the following include directives:
+	#include <Q3VBoxLayout> 	#include <Q3GridLayout> 	#include <Q3HBoxLayout> 	#include <QLabel> 
+No changes made to file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswidget.ui.h
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswindow.h at line 25 column 20: qvaluelist.h -> q3valuelist.h
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswindow.h at line 27 column 18: qintdict.h -> q3intdict.h
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswindow.h at line 38 column 15: QListView -> Q3ListView
+In file /home/pontus/Utveckling/libs/kipi-plugins/wsexport/wswindow.h at line 42 column 21: QProgressDialog -> Q3ProgressDialog
+
